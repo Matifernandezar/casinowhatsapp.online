@@ -36,9 +36,16 @@
     }
   </script>
 
+  <!-- Seguridad: Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+
   <title>Casino Online WhatsApp - Regístrate y Juega con Bonos Exclusivos</title>
   <link rel="icon" type="image/webp" href="ganaencasa.webp">
+  
+  <!-- Preload para optimización -->
+  <link rel="preload" href="styles.min.css" as="style">
   <link rel="stylesheet" type="text/css" href="styles.min.css">
+  <link rel="preload" href="script.min.js" as="script">
 </head>
 
 <body>
@@ -50,8 +57,8 @@
             <div class="input-group">
               <input type="text" id="name" required aria-label="Tu nombre" placeholder="Ingresa tu nombre">
             </div>
-            <!-- Botón para redirigir a WhatsApp con el mensaje -->
-            <button type="submit" class="cta" id="submit-button">
+            <!-- Botón accesible para redirigir a WhatsApp con el mensaje -->
+            <button type="submit" class="cta" id="submit-button" aria-label="Crear usuario en WhatsApp">
                Crear Usuario
             </button>
         </form>
@@ -67,8 +74,9 @@
     </div>
     
     <a href="https://wa.link/w6n9lw" class="floating-button" target="_blank">
-    <img src="whatsapp.webp" alt="WhatsApp Casino">
-</a>
+      <img src="whatsapp.webp" alt="WhatsApp Casino" width="50" height="50">
+    </a>
+    
     <script src="script.min.js"></script>
     <footer>
         <p>El juego puede ser adictivo. Juega con responsabilidad</p>
