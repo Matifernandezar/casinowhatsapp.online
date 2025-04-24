@@ -1,0 +1,38 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-forwarded-proto",
+          "value": "http"
+        }
+      ],
+      "destination": "https://casinowhatsapp.online/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.casinowhatsapp.online"
+        }
+      ],
+      "destination": "https://casinowhatsapp.online/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "whatsapp-online-ten.vercel.app"
+        }
+      ],
+      "destination": "https://casinowhatsapp.online/$1",
+      "permanent": true
+    }
+  ]
+}
